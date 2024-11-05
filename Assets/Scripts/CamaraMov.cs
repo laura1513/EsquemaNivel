@@ -20,6 +20,7 @@ public class CamaraMov : MonoBehaviour
     {
         if (_isMoving)
         {
+            //Ole
             //Mover la camara
             cam.GetComponent<Transform>().position = Vector3.Lerp(cam.GetComponent<Transform>().position, target.position, speed * Time.deltaTime);
 
