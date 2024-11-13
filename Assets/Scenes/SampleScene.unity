@@ -24087,6 +24087,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 49a53c85-cbf4-4910-87df-9ca041fe73e0
     m_ActionName: Player/Mover[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 447a43d0-f68f-4aca-adbe-f60d79754d41
+    m_ActionName: Player/Interactuar[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -24148,7 +24152,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
