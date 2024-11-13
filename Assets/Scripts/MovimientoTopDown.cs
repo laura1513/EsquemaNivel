@@ -6,15 +6,9 @@ using UnityEngine.InputSystem;
 public class MovimientoTopDown : MonoBehaviour
 {
     [SerializeField] private float moveVel;
-    //[SerializeField] private float maxVel;
-    //[SerializeField] private Transform groundPos;
-    //[SerializeField] private Vector2 tamCaja;
-   
     [SerializeField] private float fuerzaFlecha;
     [SerializeField] private GameObject _flecha;
     [SerializeField] private Transform posFlecha;
-    //[SerializeField] private LayerMask sueloLayer;
-    
     private Vector2 pointerInput, movementInput;
 
     private PlayerInput _playerinput;
@@ -56,41 +50,6 @@ public class MovimientoTopDown : MonoBehaviour
             _left = false;
         }
     }
-
-    /*public void Saltar(InputAction.CallbackContext context)
-    {
-        Debug.Log(context.phase);
-        if (context.started && _gravedad)
-        {
-            _rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
-            _animator.SetTrigger("Saltar");
-        }
-    }*/
-
-    /*private void FixedUpdate()
-    {
-        if (_rb.velocity.magnitude <= maxVel)
-        {
-            //_rb.AddForce(new Vector2(_pos.x, 0) * moveVel);
-        }
-        _rb.velocity = new Vector2(_pos.x * moveVel, _rb.velocity.y);
-    
-    }*/
-
-    /*public bool Gravedad()
-    {
-        if(Physics2D.BoxCast(_groundPos2D, tamCaja, 0f, Vector3.zero, 0f, sueloLayer))
-        {
-            return true;
-        } else
-        {
-            return false;
-        }
-    }
-
-    private void OnDrawGizmos() { 
-        Gizmos.DrawWireCube(groundPos.position, tamCaja);
-    }*/
     public void Ataque(InputAction.CallbackContext context)
     {
         
