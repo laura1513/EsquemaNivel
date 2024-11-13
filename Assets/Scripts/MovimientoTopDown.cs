@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class MovimientoTopDown : MonoBehaviour
 {
-    //[SerializeField] private float fuerzaSalto;
     [SerializeField] private float moveVel;
     //[SerializeField] private float maxVel;
     //[SerializeField] private Transform groundPos;
@@ -22,8 +21,6 @@ public class MovimientoTopDown : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector2 _pos;
     private Transform _transform;
-    //private bool _gravedad;
-    //private Vector2 _groundPos2D;
     private Animator _animator;
     private SpriteRenderer _sprite;
     private bool _left;
@@ -45,18 +42,9 @@ public class MovimientoTopDown : MonoBehaviour
         pointerInput = GetPointerInput();
         
         _pos = _playerinput.actions["Mover"].ReadValue<Vector2>();
-        //Debug.Log(_pos);
 
+        //Para mover el personaje
         _transform.position += new Vector3(_pos.x * moveVel * Time.deltaTime, _pos.y * moveVel * Time.deltaTime, 0);
-        
-        //_groundPos2D = groundPos.position;
-
-        //_gravedad = Gravedad();
-
-        //Para cambiar la animacion cuando se mueve
-       // _animator.SetFloat("VelX", Mathf.Abs(_pos.x));
-        //_animator.SetFloat("VelY", Mathf.Abs(_pos.y));
-        //_animator.SetBool("Grounded", _gravedad);
 
         //Para rotar el personaje
         if (_pos.x > 0 && !_left) {
