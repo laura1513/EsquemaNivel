@@ -33,7 +33,7 @@ public class MovimientoTopDown : MonoBehaviour
 
     private void Update()
     {
-        pointerInput = GetPointerInput();
+        //pointerInput = GetPointerInput();
         
         _pos = _playerinput.actions["Mover"].ReadValue<Vector2>();
 
@@ -79,24 +79,35 @@ public class MovimientoTopDown : MonoBehaviour
 
     }
 
-    public void Disparando()
-    {
+    //public void Disparando()
+   // {
         
         
-        _disparando = true;
-    }
-    public void NoDisparando()
+        //_disparando = true;
+   // }
+    //public void NoDisparando()
+    
+    
+    public void Disparar(InputAction.CallbackContext context)
     {
-        _disparando = false;
+        //Debug.Log(context.phase);
+        if (context.started && !_atacando)
+        {
+            _rb.velocity = Vector2.zero;
+            //_animator.SetBool("Disparar", true);
+            Atacando();
+        }
     }
+    public void Disparando() { _atacando = true; _animator.SetBool("Disparar", true); }
+    public void NoDisparando() { _atacando = false; _animator.SetBool("Disparar", false); }
     // Video camara aim https://youtu.be/DPqc7qYDtzM?si=ZONzmozuQsopG8gZ
 
-    private Vector2 GetPointerInput()
-    {
-        Vector3 mousePos = _playerinput.actions["PointerPosition"].ReadValue<Vector2>();
-        mousePos.z = Camera.main.nearClipPlane;
-        Debug.Log(mousePos);
-        return Camera.main.ScreenToWorldPoint(mousePos);
-        
-    }
+    //private Vector2 GetPointerInput()
+    // {
+    //Vector3 mousePos = _playerinput.actions["PointerPosition"].ReadValue<Vector2>();
+    // mousePos.z = Camera.main.nearClipPlane;
+    // Debug.Log(mousePos);
+    // return Camera.main.ScreenToWorldPoint(mousePos);
+
+    // }
 }

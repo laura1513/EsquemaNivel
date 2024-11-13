@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Flecha",
+                    "name": "Disparar",
                     "type": "Button",
                     "id": "597a62e9-800a-4c1c-afa5-2b9ad8155ee0",
                     "expectedControlType": "",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PointerPosition",
+                    "name": "MousePos",
                     "type": "Value",
                     "id": "5acacdc9-ed1d-46cd-9d7e-e495e91be8bf",
                     "expectedControlType": "Vector2",
@@ -105,7 +105,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Flecha",
+                    "action": "Disparar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -123,11 +123,11 @@
                 {
                     "name": "",
                     "id": "bb6bb899-1a57-4fd7-9d14-4450b84af35a",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PointerPosition",
+                    "action": "MousePos",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
