@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemigo
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - flecha
+  - Flecha
   - Player
   - 
   - 
@@ -25,9 +26,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -41,15 +42,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Suelo
-    uniqueID: 3966770343
+  - name: Layer 1
+    uniqueID: 2425651459
     locked: 0
-  - name: Paredes
-    uniqueID: 2869364237
+  - name: suelo
+    uniqueID: 4250941897
     locked: 0
-  - name: Items
-    uniqueID: 3715325849
+  - name: pared
+    uniqueID: 4189426099
     locked: 0
-  - name: Mobs
-    uniqueID: 2969149735
+  - name: Suelo tile
+    uniqueID: 1852997609
+    locked: 0
+  - name: Pared tile
+    uniqueID: 365735705
+    locked: 0
+  - name: items
+    uniqueID: 1132313219
+    locked: 0
+  - name: mobs
+    uniqueID: 2170090239
     locked: 0

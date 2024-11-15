@@ -13,7 +13,7 @@ public class Flecha : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Taca");
-        this.transform.parent = collision.gameObject.transform; //Linea mágica para que las flechas se claven en el enemigo
+        //this.transform.parent = collision.gameObject.transform; //Linea mágica para que las flechas se claven en el enemigo
         _rb.angularVelocity = 0;
         _rb.velocity = Vector2.zero;
         _rb.isKinematic = true;
