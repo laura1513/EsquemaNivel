@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
+  - player
   - flecha
-  - Player
   - 
   - 
   - 
@@ -25,9 +25,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -41,15 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Suelo
-    uniqueID: 3966770343
+  - name: fondo
+    uniqueID: 4189426099
     locked: 0
-  - name: Paredes
-    uniqueID: 2869364237
+  - name: 'suelo '
+    uniqueID: 2425651459
     locked: 0
-  - name: Items
-    uniqueID: 3715325849
+  - name: paredes
+    uniqueID: 4250941897
     locked: 0
-  - name: Mobs
-    uniqueID: 2969149735
+  - name: player
+    uniqueID: 1461478715
+    locked: 0
+  - name: item
+    uniqueID: 756609759
+    locked: 0
+  - name: mob
+    uniqueID: 3723607471
     locked: 0
