@@ -9,10 +9,9 @@
 
 * **Profesor:** Joaquín Gil
 * **Alumnos:**
-	+ Laura Forques
+	+ Laura Jorques
 	+ Samuel Moreno
 	+ Aarón Faubell
-	+ Vicente Pardo
 
 ---------------------------------------
 
@@ -25,7 +24,7 @@
 
 ### Descripción Detallada del Juego
 
-* **Movimiento:** WASD o flechas
+* **Movimiento:** WASD
 * **Ataques:**
 	+ Ataque normal
 	+ Ataque a distancia
@@ -45,7 +44,7 @@
 * **Vista:** Vista desde arriba
 * **Movimiento:** Movimiento a la izquierda, derecha, delante (arriba) y atrás (abajo)
 * **Objetivo:** Llegar al final del nivel donde hay un tesoro
-* **Enemigos:** Enemigos simples y con IA. 3 IAs diferentes por nivel, 12 en total
+* **Enemigos:** Enemigos simples y con IA. 3 IAs diferentes por nivel, 9 en total
 * **Llaves:** Son necesarias llaves para llegar al final del nivel
 * **Punto de control:** Sin punto de control
 * **Vehículos:** Sin vehículos
@@ -55,7 +54,7 @@
 
 ### Personajes
 
-* **Protagonista:** Capybara 2D
+* **Protagonista:** ---
 * **Antagonistas:**
 	+ Enemigo con IA simple que patrulla
 	+ Enemigo con IA más avanzada que persigue
