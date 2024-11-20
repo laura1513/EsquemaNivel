@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class DisparoMouse : MonoBehaviour
+
 {
+
+    [SerializeField] private float cooldownTime; //El tiempo que tarda en volver a disparar.
+    [SerializeField] private float nextFireTime;
     public GameObject flechaPrefab;  // Prefab de la flecha a disparar
     public Transform firePoint;     // Punto desde el cual se dispararán las flechas
     public float flechaSpeed = 10f;  // Velocidad de la flecha
@@ -21,9 +26,16 @@ public class DisparoMouse : MonoBehaviour
     // Detecto el disparo
     public void Disparar(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        //Para que el cooldown funcione
+        if (Time.time > nextFireTime)
         {
-            ShootArrow();
+
+            if (context.performed)
+            {
+
+                ShootArrow();
+                nextFireTime = Time.time + cooldownTime;
+            }
         }
     }
 
