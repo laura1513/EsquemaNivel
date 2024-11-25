@@ -43,8 +43,8 @@ public class MovimientoTopDown : MonoBehaviour
         _transform.position += new Vector3(_pos.x * moveVel * Time.deltaTime, _pos.y * moveVel * Time.deltaTime, 0);
 
         //Para rotar el personaje
-        _animator.SetFloat("velX", Mathf.Abs(_pos.x));
-        _animator.SetFloat("velY", Mathf.Abs(_pos.y));
+        //_animator.SetFloat("velX", Mathf.Abs(_pos.x));
+        //_animator.SetFloat("velY", Mathf.Abs(_pos.y));
         if (_pos.x > 0 && !_girar) { transform.localScale = new Vector3(-1,1,1); _girar = true; }
         if (_pos.x < 0 && _girar) { transform.localScale = new Vector3(1,1,1); _girar = false; }
         if (_pos != Vector2.zero)
