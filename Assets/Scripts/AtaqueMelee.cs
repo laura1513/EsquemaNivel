@@ -9,11 +9,11 @@ public class AtaqueMelee : MonoBehaviour
     [SerializeField] private Transform puntoAtaque;
     [SerializeField] private float radioAtaque;
     //[SerializeField] private GameObject particulas; El tiene particulas
-    [SerializeField] private float fuerzaAtaque;]
+    [SerializeField] private float fuerzaAtaque;
     //Sale en el animator
     private bool _atacando;
     // Input action
-    private PLayerInput _playerInput;
+    /*private PLayerInput _playerInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +66,5 @@ public class AtaqueMelee : MonoBehaviour
         }
 
 
-    }
+    }*/
 }
